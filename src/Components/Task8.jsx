@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { toggleTheme } from '../redux/theme/themeActions'; // updated
-import { selectTheme } from '../redux/theme/themeSelectors'; // updated
+import { toggleTheme } from '../redux/theme/themeActions'; 
+import { selectTheme } from '../redux/theme/themeSelectors'; 
 
 const Task8 = () => {
-  const theme = useSelector(selectTheme); // updated
+  const theme = useSelector(selectTheme); 
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -12,7 +12,7 @@ const Task8 = () => {
   }, [theme]);
 
   return (
-    <div className="container mt-5 text-center">
+    <div className="container text-center">
       <h2>Task 8: Create a Theme Slice</h2>
       <p>Current Theme: <strong>{theme}</strong></p>
       <button className="btn btn-primary" onClick={() => dispatch(toggleTheme())}>
