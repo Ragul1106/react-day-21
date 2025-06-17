@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
-import Task from './Components/Task'
+import Counter from './Components/Counter';
+import AuthStatus from './Components/AuthStatus';
+import MessageDisplay from './Components/MessageDisplay';
 import Proj1 from './Components/Proj1'
 import Proj2 from './Components/Proj2'
 import Proj3 from './Components/Proj3'
@@ -10,8 +12,16 @@ function App() {
 
   return (
     <>
-      <Task />
+      <h1 className="text-center mb-4">Redux Basics Demo</h1>
+      <Counter />
       <hr />
+      <br />
+      <AuthStatus />
+      <hr />
+      <br />
+      <MessageDisplay />
+      <hr />
+      <br />
       <Proj1 />
       <hr />
       <br />
