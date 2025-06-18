@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <h1 className="text-center mb-4">Redux Basics Demo</h1>
+      <h1 className="text-center mb-4">Redux Basics Day 21</h1>
       <Counter />
       <hr />
       <br />

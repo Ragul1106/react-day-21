@@ -1,14 +1,12 @@
-import { combineReducers } from 'redux';
-import { counterReducer } from './counterReducer';
-import authReducer from './authReducer';
-import messageReducer from './messageReducer';
+import { combineReducers } from "redux";
+import { countReducer } from "./countReducer";
+import {authReducer} from "./authReducer";
+import {messageReducer} from "./messageReducer";
 
 const rootReducer = combineReducers({
-  counter: counterReducer,
+  count: countReducer,
   auth: authReducer,
   message: messageReducer,
 });
 
 export default rootReducer;
-
-
